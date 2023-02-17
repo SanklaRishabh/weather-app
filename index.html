@@ -5,7 +5,9 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>Weather</title>
+        <link rel="icon" type="image/svg+xml" href="resources/icon/favicon.svg">
+        <link rel="icon" type="image/png" href="/resources/icon/favicon.png">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,7 +21,7 @@
             <div class="left">
                 <div class="search">
                     <span class="material-icons-outlined">search</span>
-                    <input id="search-bar" type="search" placeholder="Go to places">
+                    <input id="search-bar" type="text" placeholder="Go to places">
                 </div>
                 <h1>Weather <span class="forecast">Forecast</span></h1>
                 <div class="places">
@@ -47,19 +49,29 @@
                     <label>
                         <input type="radio" name="place">
                         <div class="image-box">
-                            <img class="location" src="resources/big-benjpg.jpg" alt="London" draggable="false">
+                            <img class="location" src="resources/big-ben.jpg" alt="London" draggable="false">
                         </div>
                         <p>London, UK</p>
                     </label>
                 </div>
                 <h3>This week</h3>
                 <div class="week">
-                    <div class="days"><span>Saturday</span><span class="material-icons chill">ac_unit</span></div>
-                    <div class="days"><span>Sunday</span><span class="material-icons sun">wb_sunny</span></div>
-                    <div class="days"><span>Monday</span><span class="material-icons air">air</span></div>
-                    <div class="days"><span>Tuesday</span><span class="material-icons water">water</span></div>
-                    <div class="days"><span>Wednesday</span><span class="material-icons thunder">thunderstorm</span></div>
+                    <div class="days">
+                        <div>Saturday</div>
+                        <div>Sunday</div>
+                        <div>Monday</div>
+                        <div>Tuesday</div>
+                        <div>Wednesday</div>
+                    </div>
+                    <div class="icons">
+                        <div class="material-icons chill">ac_unit</div>
+                        <div class="material-icons sun">wb_sunny</div>
+                        <div class="material-icons air">air</div>
+                        <div class="material-icons water">water</div>
+                        <div class="material-icons thunder">thunderstorm</div>
+                    </div>
                 </div>
+            </div>
             </div>
             <div class="right">
                 <div class="temperature">
@@ -70,13 +82,13 @@
                     <h5>Fri, 17 Feb</h5>
                     <h1 id="measure">28<span><sup>&deg;C</sup></span></h1>
                     <h6>New Delhi, India</h6>
-                    <span class="material-icons-outlined moon">nightlight</span>
-                    <span class="material-icons-outlined cloud-1">cloud</span>
-                    <span class="material-icons-outlined cloud-2">cloud</span>
+                    <span class="material-icons background moon">nightlight</span>
+                    <span class="material-icons background cloud-1">cloud</span>
+                    <span class="material-icons background cloud-2">cloud</span>
                 </div>
             </div>
         </section>
-        
+
         <script src="script.js"></script>
     </body>
 

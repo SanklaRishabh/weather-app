@@ -14,27 +14,26 @@ body {
 }
 
 .container {
-    /* position: absolute; */
     display: grid;
     width: 95%;
     height: 95%;
     background-color: #E3F6FE;
     border-radius: 50px;
     overflow: hidden;
-    grid-template-columns: auto auto;
+    grid-template-columns: 65% 35%;
 }
 
 .left {
     display: inline-block;
+    width: 100%;
 }
 
 .search {
     display: flex;
     margin: 3% 0 0 5%;
-    /* border-radius: 100px; */
 }
 
-.search > .material-icons-outlined {
+.search .material-icons-outlined {
     padding: 1%;
     background-color: #FFFFFF;
     color: grey;
@@ -42,11 +41,12 @@ body {
     border-bottom-left-radius: 15px;
 }
 
-.search > input {
-    font-size: .9em;
+.search input {
+    font-size: 1em;
     font-weight: 400;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
+    color: 
 }
 
 input:focus {
@@ -103,35 +103,49 @@ input[type="radio"] {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    /* height: auto; */
 }
 
 .left h3 {
     margin-top: 2%;
     margin-left: 8%;
     margin-bottom: 0%;
-    border-bottom: 10px;
     color: #110E3C;
 }
 
 .week {
-    height: 40%;
-    margin-left: 8%;
+    margin: 0 8% 1%;
+    /* height: 5%; */
+    /* width: auto; */
+    display: grid;
+    /* flex-direction: column; */
+    /* justify-content: space-evenly; */
+    font-weight: light;
+    color: #110E3C;
+    grid-template-columns: 25% 75%;
+}
+
+.days, .icons {
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    font-weight: light;
-    color: #110E3C;
+    /* align-items: center; */
 }
 
-.week .material-icons {
-    margin-left: 6em;
-    /* font-size: 1.5em; */
-    /* right: 0; */
+.icons {
+    padding: 2%;
 }
 
-.days {
-    align-items: center;
+.days div {
+    margin: 1.5% 0;
+}
+
+.days div {
+    font-size: 1em;
+}
+
+.icons .material-icons {
+    margin: 2%;
 }
 
 .week .chill {
@@ -153,10 +167,9 @@ input[type="radio"] {
 }
 
 .right {
-    /* position: absolute; */
+    /* position: fixed; */
     display: inline-block;
     background-color: #110E3C;
-    height: 85%;
     color: white;
     width: 100%;
     height: 100%;
@@ -203,6 +216,8 @@ input[type="radio"]:checked ~ .image-box {
 #measure {
     font-size: 8em;
     font-weight: 10;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 0;
 }
 
@@ -212,12 +227,11 @@ input[type="radio"]:checked ~ .image-box {
 
 .temperature h6 {
     font-weight: 10;
-    font-size: .8em;
+    font-size: .9em;
 }
 
-.right .material-icons-outlined {
+.right .background {
     position: absolute;
-    /* color: white; */
     color: #3C3B50;
     font-weight: 600;
 }
