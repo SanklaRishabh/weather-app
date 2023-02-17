@@ -46,7 +46,6 @@ body {
     font-weight: 400;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
-    color: 
 }
 
 input:focus {
@@ -114,11 +113,7 @@ input[type="radio"] {
 
 .week {
     margin: 0 8% 1%;
-    /* height: 5%; */
-    /* width: auto; */
     display: grid;
-    /* flex-direction: column; */
-    /* justify-content: space-evenly; */
     font-weight: light;
     color: #110E3C;
     grid-template-columns: 25% 75%;
@@ -129,7 +124,6 @@ input[type="radio"] {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    /* align-items: center; */
 }
 
 .icons {
@@ -167,7 +161,6 @@ input[type="radio"] {
 }
 
 .right {
-    /* position: fixed; */
     display: inline-block;
     background-color: #110E3C;
     color: white;
@@ -193,7 +186,6 @@ input[type="radio"]:checked ~ .image-box {
 }
 
 .temperature .water {
-    /* display: inline; */
     color: grey;
     font-size: 1.5em;
 }
@@ -241,7 +233,6 @@ input[type="radio"]:checked ~ .image-box {
     left: 3%;
     font-size: 10em;
     transform: rotate(-60deg);
-    /* transform:  translateX(-10%); */
 }
 
 .cloud-1 {
