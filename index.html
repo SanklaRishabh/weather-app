@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <section class="container">
+            <div class="left">
+                <div class="search">
+                    <span class="material-icons-outlined">search</span>
+                    <input id="search-bar" type="search" placeholder="Go to places">
+                </div>
+                <h1>Weather <span class="forecast">Forecast</span></h1>
+                <div class="places">
+                    <label>
+                        <input type="radio" name="place" checked>
+                        <div class="image-box">
+                            <img class="location" src="resources/india-gate.jpg" alt="New Delhi" draggable="false">
+                        </div>
+                        <p>New Delhi, India</p>
+                    </label>
+                    <label>
+                        <input type="radio" name="place">
+                        <div class="image-box">
+                            <img class="location" src="resources/tokyo-tower.jpg" alt="Tokyo" draggable="false">
+                        </div>
+                        <p>Tokyo, Japan</p>
+                    </label>
+                    <label>
+                        <input type="radio" name="place">
+                        <div class="image-box">
+                            <img class="location" src="resources/statue-liberty.jpg" alt="New York" draggable="false">
+                        </div>
+                        <p>New York, USA</p>
+                    </label>
+                    <label>
+                        <input type="radio" name="place">
+                        <div class="image-box">
+                            <img class="location" src="resources/big-benjpg.jpg" alt="London" draggable="false">
+                        </div>
+                        <p>London, UK</p>
+                    </label>
+                </div>
+                <h3>This week</h3>
+                <div class="week">
+                    <div class="days"><span>Saturday</span><span class="material-icons chill">ac_unit</span></div>
+                    <div class="days"><span>Sunday</span><span class="material-icons sun">wb_sunny</span></div>
+                    <div class="days"><span>Monday</span><span class="material-icons air">air</span></div>
+                    <div class="days"><span>Tuesday</span><span class="material-icons water">water</span></div>
+                    <div class="days"><span>Wednesday</span><span class="material-icons thunder">thunderstorm</span></div>
+                </div>
+            </div>
+            <div class="right">
+                <div class="temperature">
+                    <h1>
+                        <span class="material-icons water">water</span>
+                        <span class="today">Today</span>
+                    </h1>
+                    <h5>Fri, 17 Feb</h5>
+                    <h1 id="measure">28<span><sup>&deg;C</sup></span></h1>
+                    <h6>New Delhi, India</h6>
+                    <span class="material-icons-outlined moon">nightlight</span>
+                    <span class="material-icons-outlined cloud-1">cloud</span>
+                    <span class="material-icons-outlined cloud-2">cloud</span>
+                </div>
+            </div>
+        </section>
+        
+        <script src="script.js"></script>
+    </body>
+
+</html>

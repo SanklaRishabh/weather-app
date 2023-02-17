@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background-color: #68A0F3;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    /* position: absolute; */
+    display: grid;
+    width: 95%;
+    height: 95%;
+    background-color: #E3F6FE;
+    border-radius: 50px;
+    overflow: hidden;
+    grid-template-columns: auto auto;
+}
+
+.left {
+    display: inline-block;
+}
+
+.search {
+    display: flex;
+    margin: 3% 0 0 5%;
+    /* border-radius: 100px; */
+}
+
+.search > .material-icons-outlined {
+    padding: 1%;
+    background-color: #FFFFFF;
+    color: grey;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.search > input {
+    font-size: .9em;
+    font-weight: 400;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+input:focus {
+    outline: none;
+}
+
+#search-bar {
+    border-style: none;
+    width: 30%;
+}
+
+.left h1 {
+    margin: 3% 5% 5%;
+    font-weight: normal;
+    color: #110E3C;
+}
+
+.forecast {
+    font-weight: 1000;
+}
+
+.places {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+label {
+    cursor: pointer;
+}
+
+label p {
+    margin: 10px;
+    text-align: center;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.image-box {
+    position: relative;
+    width: 150px;  /* relative sizing to be done */
+    height: 150px;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    overflow: hidden;
+    -webkit-transition: -webkit-transform .3s;
+    transition: transform .3s;
+    user-select: none;
+}
+
+.location {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* height: auto; */
+}
+
+.left h3 {
+    margin-top: 2%;
+    margin-left: 8%;
+    margin-bottom: 0%;
+    border-bottom: 10px;
+    color: #110E3C;
+}
+
+.week {
+    height: 40%;
+    margin-left: 8%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-weight: light;
+    color: #110E3C;
+}
+
+.week .material-icons {
+    margin-left: 6em;
+    /* font-size: 1.5em; */
+    /* right: 0; */
+}
+
+.days {
+    align-items: center;
+}
+
+.week .chill {
+    color: #68A0F3;
+}
+
+.week .sun {
+    color: #F8C500;
+}
+
+.week .air {
+    color: #a6a7a7;
+}
+.week .water {
+    color: grey;
+}
+.week .thunder {
+    color: #000053;
+}
+
+.right {
+    /* position: absolute; */
+    display: inline-block;
+    background-color: #110E3C;
+    height: 85%;
+    color: white;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+input[type="radio"]:checked ~ .image-box {
+    -webkit-transform: translateY(-15%);
+    transform: translateY(-15%);
+    box-shadow: rgba(50, 50, 93, 0.75) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.temperature {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-10%);
+}
+
+.temperature .water {
+    /* display: inline; */
+    color: grey;
+    font-size: 1.5em;
+}
+
+.temperature h1 {
+    display: flex;
+    justify-content: center;
+    margin: 2%;
+    font-size: 2em;
+}
+
+.today {
+    margin: 4% 0 0 6%;
+}
+
+.temperature h5 {
+    font-weight: 10;
+}
+
+#measure {
+    font-size: 8em;
+    font-weight: 10;
+    margin-bottom: 0;
+}
+
+#measure span {
+    font-size: .5em;
+}
+
+.temperature h6 {
+    font-weight: 10;
+    font-size: .8em;
+}
+
+.right .material-icons-outlined {
+    position: absolute;
+    /* color: white; */
+    color: #3C3B50;
+    font-weight: 600;
+}
+
+.moon {
+    top: 13%;
+    left: 3%;
+    font-size: 10em;
+    transform: rotate(-60deg);
+    /* transform:  translateX(-10%); */
+}
+
+.cloud-1 {
+    top: 50%;
+    left: -10%;
+    font-size: 13em;
+}
+
+.cloud-2 {
+    top: 30%;
+    right: -5%;
+    font-size: 8em;
+}
