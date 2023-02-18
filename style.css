@@ -68,6 +68,7 @@ input:focus {
 }
 
 .places {
+    margin-bottom: -1.25%;
     display: flex;
     justify-content: space-evenly;
 }
